@@ -1,39 +1,9 @@
-import {} from './data/heroes';
-import {heroes} from './data/heroes'
+const promesa=new Promise(() =>
+{
+    setTimeout(() => {
+        alert("pasaron 20 segundos");
+    }, 2000)
+
+});
 
 
-const getHeroID = function(ID)
-{
-    return heroes.find((heroes) => {
-        if(heroes.id==ID){
-            return true;
-        }
-        else
-        return false;
-    });
-}
-//find
-const GetHeroOwner = (owner )=>
-{
-    return heroes.find((heroes)=> {
-        if(heroes.owner==owner)
-        return true;
-        else
-        return false;
-    })
-}
-//fillter
-const GetHeroOwner2 = (owner )=>
-{
-    return heroes.filter((heroes) => {
-        if(heroes.owner==owner)
-        return true;
-        else
-        return false;
-    })
-}
-console.log(getHeroID(3));
-console.log('hola');
-console.log(GetHeroOwner("DC"));
-console.log(GetHeroOwner2("DC"));
-console.log(GetHeroOwner2("Marvel"));
