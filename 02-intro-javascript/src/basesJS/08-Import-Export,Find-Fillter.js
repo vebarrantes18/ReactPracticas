@@ -1,8 +1,8 @@
-import {} from './data/heroes';
-import {heroes} from './data/heroes'
+
+import {heroes} from '../data/heroes';
 
 
-const getHeroID = function(ID)
+export const getHeroID = function(ID)
 {
     return heroes.find((heroes) => {
         if(heroes.id==ID){
@@ -13,7 +13,7 @@ const getHeroID = function(ID)
     });
 }
 //find
-const GetHeroOwner = (owner )=>
+export const GetHeroOwner = (owner )=>
 {
     return heroes.find((heroes)=> {
         if(heroes.owner==owner)
@@ -23,7 +23,7 @@ const GetHeroOwner = (owner )=>
     })
 }
 //fillter
-const GetHeroOwner2 = (owner )=>
+export const GetHeroOwner2 = (owner )=>
 {
     return heroes.filter((heroes) => {
         if(heroes.owner==owner)
@@ -37,3 +37,4 @@ console.log('hola');
 console.log(GetHeroOwner("DC"));
 console.log(GetHeroOwner2("DC"));
 console.log(GetHeroOwner2("Marvel"));
+

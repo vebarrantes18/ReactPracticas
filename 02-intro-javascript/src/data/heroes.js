@@ -1,6 +1,6 @@
 
 
-export const heroes = [
+ export const heroes = [
     {
         id: 1,
         name: 'Batman',
@@ -26,4 +26,6 @@ export const heroes = [
         name: 'Wolverine',
         owner: 'Marvel'
     },
-];
+
+    
+]
