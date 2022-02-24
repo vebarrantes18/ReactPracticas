@@ -54,3 +54,14 @@ const GetHerosByID = function(ID)
 GetHerosByID(10)
 .then(heroe => console.log(heroe))
 .catch(err => console.warn(err) );
+
+
+
+
+
+
+
+const promesa1 = new Promise((resolve,reject) =>
+{
+    console.log(heroes.owner);
+})
