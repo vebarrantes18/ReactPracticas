@@ -32,6 +32,7 @@ export const GetHeroOwner2 = (owner )=>
         return false;
     })
 }
+
 console.log(getHeroID(3));
 console.log('hola');
 console.log(GetHeroOwner("DC"));

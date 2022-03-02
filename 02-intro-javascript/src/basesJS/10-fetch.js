@@ -12,5 +12,5 @@ peticion
 
     document.body.append(img);
     
-})
+}) 
 .catch(console.warn);
